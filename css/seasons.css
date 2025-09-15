@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.season-img {
+    width: 200px;
+    border-radius: 15px;
+}
