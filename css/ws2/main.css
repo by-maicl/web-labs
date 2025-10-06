@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #021526;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.header {
+    background-color: #03223d;
+    text-align: right;
+    padding: 20px;
+}
+
+.header-block {
+    background-color: #021526;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.header-text {
+    color: #fff;
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.menu-wrapper {
+    width: 20%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.menu-header h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    color: #848484;
+    transition: all 0.3s ease;
+}
+
+.content {
+    width: 60%;
+    padding: 20px;
+    border-left: 2px solid #03223d;
+    border-right: 2px solid #03223d;
+    vertical-align: top;
+}
+
+.content-img {
+    height: 450px;
+    border-radius: 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+.content p {
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.content-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-footer-img {
+    width: 350px;
+}
+
+.right-block {
+    width: 20%;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.right-btn {
+    width: 100%;
+    background-color: #03223d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.right-btn:hover {
+    cursor: pointer;
+    background-color: #6EACDA;
+    transition: all 0.3s ease;
+}
+
+.footer {
+    background-color: #03223d;
+    margin-top: 30px;
+    padding: 40px 0;
+}
+
+.footer-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.footer-left {
+    width: 60%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.footer-img {
+    width: 350px;
+}
+
+.footer-author {
+    color: #848484;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-right {
+    width: 40%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.footer-block {
+    background-color: #021526;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+}
