@@ -1,0 +1,93 @@
+@import url("../index.css");
+
+.burger-menu-btn {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .burger-menu-btn {
+        display: block;
+        background-color: #021526;
+        padding: 0 15px;
+        font-size: 30px;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .main-container {
+        display: block;
+    }
+
+    .menu-header {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #03223d;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        top: 99px;
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .content {
+        border: none;
+    }
+
+    .content-img {
+        margin: 0 0 10px 0;
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content-footer {
+        border: none;
+    }
+
+    .content-footer-img {
+        width: 300px;
+    }
+
+    .right-block {
+        border-top: 2px solid #03223d;
+        padding: 15px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        padding: 30px 15px;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .footer-block {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-img {
+        width: 300px;
+    }
+}
