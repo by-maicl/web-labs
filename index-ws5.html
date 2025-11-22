@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/ws3/index-mobile.css">
+    <link rel="stylesheet" href="css/ws5/index.css">
     <title>Workshop 1</title>
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="header">
+        <form id="alignForm" class="header-form">
+            <label><input type="checkbox" id="chk3"> Вирівняти блок 3</label><br>
+            <label><input type="checkbox" id="chk4"> Вирівняти блок 4</label><br>
+            <label><input type="checkbox" id="chk5"> Вирівняти блок 5</label><br>
+        </form>
+
         <div class="header-block">
             <h1 class="header-text">Надприродне</h1>
         </div>
@@ -18,7 +25,7 @@
     </div>
     <div class="main-container">
 
-        <div class="menu-header">
+        <div class="menu-header" id="menuHeader">
             <h3>Досліджуйте Надприродне:</h3>
         </div>
 
@@ -36,9 +43,6 @@
                 <a href="ws2/main.html">
                     <li>Головна (without flexbox and grid)</li>
                 </a>
-                <a href="index-ws5.html">
-                    <li>Головна ws-5</li>
-                </a>
                 <a href="history.html">
                     <li>Історія створення</li>
                 </a>
@@ -54,7 +58,7 @@
             </ul>
         </div>
 
-        <div class="content">
+        <div class="content" id="content">
             <img src="img/poster1.jpg" class="content-img">
             <p><B>«Надприродне»</B> — це американський телесеріал у жанрі темного фентезі, хорору та
                 драми,
@@ -104,12 +108,32 @@
                 любов,
                 вірність і жертву.
             </p>
+
+            <form id="formBlock">
+                <textarea id="formInput" placeholder="Введіть якийсь текст" class="content-textarea"></textarea>
+                <button type="button" class="right-btn" id="formButton">Відправити</button>
+            </form>
+
+            <div class="selectBlock">
+                <h3>Оберіть блок для редагування:</h3>
+                <select id="blockSelect">
+                    <option value="">-- Оберіть блок --</option>
+                    <option value="header">1 верхня панель</option>
+                    <option value="menuHeader">2 заголовок меню</option>
+                    <option value="content">3 основний вміст</option>
+                    <option value="aside">4 блок з опитуванням</option>
+                    <option value="menu">5 меню</option>
+                    <option value="contentFooter">6 нижня частина основного вмісту</option>
+                    <option value="footer">7 підвал</option>
+                </select>
+                <div class="editor-container" id="editorContainer"></div>
+            </div>
         </div>
-        <div class="content-footer">
+        <div class="content-footer" id="contentFooter">
             <img src="img/join_the_hunt.png" alt="Join the hunt" class="content-footer-img">
         </div>
 
-        <div class="right-block">
+        <div class="right-block" id="aside">
             <p>Опитування на тему "Найкращий персонаж серіалу Надприродне"</p>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
                 <button class="right-btn">Пройти опитування</button>
@@ -117,7 +141,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
         <div>
             <a href="index.html"><img src="img/logo.png" alt="Logo Supernatural" class="footer-img"></a>
             <p class="footer-author">© 2025 Sweet Sam</p>
@@ -127,7 +151,14 @@
         </div>
     </div>
 
+    <div class="modal-window" id="modalWindow"></div>
+
     <script src="ws3/burger-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="ws5/ex1-2.js"></script>
+    <script src="ws5/ex3.js"></script>
+    <script src="ws5/ex4.js"></script>
+    <script src="ws5/ex5.js"></script>
 </body>
 
 </html>

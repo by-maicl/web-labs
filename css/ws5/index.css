@@ -1,0 +1,103 @@
+.content-textarea {
+    width: 100%;
+    background-color: #03223d;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 0;
+    min-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    resize: vertical;
+    text-indent: 5px;
+}
+
+.modal-window {
+    display: none;
+    position: fixed;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 10px;
+    padding: 20px 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modalWindowBtnBlock {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modalWindowBtn {
+    background-color: rgb(233, 233, 233);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.modalWindowBtn:hover {
+    cursor: pointer;
+    background-color: rgba(174, 174, 174, 0.633)
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header-form {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.selectBlock {
+    margin: 20px 0;
+}
+
+.selectBlock h3 {
+    font-weight: 500;
+}
+
+.selectBlock select {
+    background-color: #03223d;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.editor-container {
+    margin-top: 10px;
+}
+
+.editor-container textarea {
+    background-color: #03223d;
+    color: #fff;
+    border-radius: 15px;
+    resize: vertical;
+    width: 100%;
+    min-height: 200px;
+}
+
+.editor-container button {
+    padding: 10px 20px;
+    background-color: #03223d;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-clear {
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+}
