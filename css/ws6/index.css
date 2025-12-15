@@ -1,0 +1,159 @@
+.glitch-controls {
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.glitch-controls input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: #03223d;
+    color: white;
+    border-radius: 15px;
+}
+
+.glitch-controls button {
+    padding: 10px 15px;
+    background: #8b0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.glitch-controls button:hover {
+    background: #ff0000;
+}
+
+#glitch-result-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.glitch-text {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.glitch-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+@keyframes glitch-anim-1 {
+    0% {
+        clip-path: inset(20% 0 80% 0);
+        transform: translate(-2px, 1px);
+    }
+
+    20% {
+        clip-path: inset(60% 0 10% 0);
+        transform: translate(2px, -1px);
+    }
+
+    40% {
+        clip-path: inset(40% 0 50% 0);
+        transform: translate(-2px, 2px);
+    }
+
+    60% {
+        clip-path: inset(80% 0 5% 0);
+        transform: translate(2px, -2px);
+    }
+
+    80% {
+        clip-path: inset(10% 0 60% 0);
+        transform: translate(-1px, 2px);
+    }
+
+    100% {
+        clip-path: inset(30% 0 30% 0);
+        transform: translate(1px, -1px);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip-path: inset(10% 0 60% 0);
+        transform: translate(2px, -1px);
+    }
+
+    20% {
+        clip-path: inset(30% 0 20% 0);
+        transform: translate(-2px, 1px);
+    }
+
+    40% {
+        clip-path: inset(70% 0 10% 0);
+        transform: translate(2px, 1px);
+    }
+
+    60% {
+        clip-path: inset(20% 0 50% 0);
+        transform: translate(-2px, -1px);
+    }
+
+    80% {
+        clip-path: inset(50% 0 30% 0);
+        transform: translate(1px, 2px);
+    }
+
+    100% {
+        clip-path: inset(10% 0 80% 0);
+        transform: translate(-1px, -2px);
+    }
+}
+
+#glitch-center {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.glitch-card {
+    border: 2px solid #03223d;
+    background: #0b1c2d;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.glitch-text {
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.glitch-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+}
+
+.glitch-layer.red {
+    color: red;
+    transform: translate(2px, -1px);
+}
+
+.glitch-layer.blue {
+    color: cyan;
+    transform: translate(-2px, 1px);
+}
